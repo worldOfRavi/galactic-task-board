@@ -1,11 +1,17 @@
-import React from 'react'
+import Navbar from "./components/Navbar";
+import Sidebar from "./components/Sidebar";
+import Board from "./components/Board";
 
 const App = () => {
   return (
     <div>
-      <h1>Galactic Task Board</h1>
+      <Navbar />
+      <div className="flex flex-row h-[90vh] ">
+        <Sidebar />
+        <Board />
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
